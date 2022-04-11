@@ -26,3 +26,5 @@ Route.get('/', async () => {
 })
 
 Route.resource('/crud','CrudsController').apiOnly()
+
+Route.get('test','testsController.test')
