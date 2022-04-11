@@ -25,6 +25,8 @@ Route.get('/', async () => {
   return { Environtment: `${ENV.get('NODE_ENV')}`}
 })
 
+Route.post('/auth', 'AuthController.login')
+Route.post('/signup', 'AuthController.register')
 Route.resource('/crud','CrudsController').apiOnly()
 
 Route.get('test','testsController.test')
