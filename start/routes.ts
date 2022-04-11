@@ -26,3 +26,5 @@ Route.get('/', async () => {
 })
 
 Route.resource('/crud','CrudsController').apiOnly()
+
+//this is a comment for dev 1
