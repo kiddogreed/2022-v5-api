@@ -28,3 +28,4 @@ Route.get('/', async () => {
 Route.resource('/crud','CrudsController').apiOnly()
 
 Route.get('test','testsController.test')
+Route.get('dev','DevsController.dev')
