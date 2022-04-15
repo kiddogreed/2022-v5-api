@@ -33,15 +33,15 @@ test.group('http request', () => {
 
   test(`PUT UPDATE /crud/${testid}`, async (assert) => {
     const update = await Crud.find(testid)
-    update.name = testname
-    update.save()
-    assert.equal(update.name ,testname)   
+    update!.name = testname
+    update!.save()
+    assert.equal(update!.name ,testname)   
   })
 
   test(`DELETE DESTROY /crud/${testid}`, async (assert) => {
     const crud = await Crud.find(testid)
-    crud.delete() 
-    assert.equal(crud.id ,testid)
+    crud!.delete() 
+    assert.equal(crud!.id ,testid)
   })
 
 
